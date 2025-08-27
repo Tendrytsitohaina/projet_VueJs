@@ -1,0 +1,18 @@
+
+@font-face {
+    font-family: 'maPolice';
+    src: url(./assets/fonts/remixicon.svg) format('truetype');
+}
+
+body{
+    background: linear-gradient(134deg, #0d033d, #250e75, #5a1ca2, #9424b8);
+    color: white;
+    font-family: 'maPolice', sans-serif;
+}
+
+.arround{
+    /* background: #eee; */
+    border-radius: 15px;
+    overflow-y:auto;
+    max-height: 60vh;
+}
