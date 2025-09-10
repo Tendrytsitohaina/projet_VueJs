@@ -72,7 +72,7 @@ Chart.register(PieController, ArcElement, Tooltip, Legend)
 const chartCanvas = ref(null)
 const dataChart = ref([])
 const chargerUtilisateurs = async () => {
-  await axios.get(`http://localhost/cliprojvue/backend/API/utilisateurs/lister.php`)
+  await axios.get(`http://localhost/projet_VueJs/cliprojvue/backend/API/utilisateurs/lister.php`)
   .then(res => {
     // console.table(res.data)
     dataChart.value = res.data.map(record => {

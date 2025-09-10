@@ -110,7 +110,7 @@ function getData(data){
 
 const chargerUtilisateurs = async () => {
   console.log(`REcherche val ici:${recherche.value}`)
-  await axios.get(`http://localhost/cliprojvue/backend/API/utilisateurs/lister.php?q=${recherche.value}&tri=${triPar.value}`)
+  await axios.get(`http://localhost/projet_VueJs/cliprojvue/backend/API/utilisateurs/lister.php?q=${recherche.value}&tri=${triPar.value}`)
   .then(res => {
     console.log(res.data)
     utilisateurs.value = res.data.filter(u => u.numloc !== null && u.numloc !== '')

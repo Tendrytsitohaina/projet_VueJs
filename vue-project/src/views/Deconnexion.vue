@@ -38,7 +38,7 @@ const props = defineProps({
 
 const logout = async () => {
   try {
-    await fetch('http://localhost/cliprojvue/backend/API/utilisateurs/logout.php', {
+    await fetch('http://localhost/projet_VueJs/cliprojvue/backend/API/utilisateurs/logout.php', {
       method: 'POST',
       credentials: 'include', // important pour envoyer les cookies (session)
     })

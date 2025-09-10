@@ -55,7 +55,7 @@
   
   const login = async () => {
   try {
-    const response = await fetch('http://localhost/cliprojvue/backend/API/utilisateurs/login.php', {
+    const response = await fetch('http://localhost/projet_VueJs/cliprojvue/BackEnd/API/utilisateurs/login.php', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -85,7 +85,7 @@
   
 const signup = async () => {
   try {
-    const response = await fetch('http://localhost/cliprojvue/backend/API/utilisateurs/signup.php', {
+    const response = await fetch('http://localhost/projet_VueJs/cliprojvue/BackEnd/API/utilisateurs/signup.php', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

@@ -53,7 +53,7 @@ const router = useRouter()
 
 const logout = async () => {
   try {
-    await fetch('http://localhost/cliprojvue/backend/API/utilisateurs/logout.php', {
+    await fetch('http://localhost/projet_VueJs/cliprojvue/backend/API/utilisateurs/logout.php', {
       method: 'POST',
       credentials: 'include', // important pour envoyer les cookies (session)
     })
@@ -69,7 +69,7 @@ const isAuthenticated = ref(false)
 
 onMounted(async () => {
   try {
-    const res = await fetch('http://localhost/cliprojvue/backend/API/utilisateurs/checkAuth.php', {
+    const res = await fetch('http://localhost/projet_VueJs/cliprojvue/backend/API/utilisateurs/checkAuth.php', {
       method: 'GET',
       credentials: 'include' // pour que le cookie de session PHP soit envoyé
     })

@@ -33,7 +33,7 @@ const emit = defineEmits(['toast', 'delete-success', 'fermerDelete'])
 
 const submitForm = async () => {
   try {
-    const res = await axios.post('http://localhost/cliprojvue/backend/API/utilisateurs/supprimer.php', {
+    const res = await axios.post('http://localhost/projet_VueJs/cliprojvue/backend/API/utilisateurs/supprimer.php', {
       numloc: props.numlocA
     },{
       headers: { 'Content-Type': 'application/json' }

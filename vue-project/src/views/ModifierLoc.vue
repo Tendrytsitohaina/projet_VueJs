@@ -69,7 +69,7 @@ const emit = defineEmits(['toast', 'update-success', 'fermerUpdate'])
 
 const submitForm = async () => {
   try {
-    const res = await axios.post('http://localhost/cliprojvue/backend/API/utilisateurs/modifier.php', {
+    const res = await axios.post('http://localhost/projet_VueJs/cliprojvue/backend/API/utilisateurs/modifier.php', {
       numloc: numloc.value,
       nom_loc: nom_loc.value,
       design_voiture: design_voiture.value,
